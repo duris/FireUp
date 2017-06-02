@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import ReactiveSwift
+import Result
 
 class ViewController: UIViewController {
 
@@ -15,11 +17,18 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
+    
+//    let sp = SignalProducer<String, NoError>{ (sink: Observer, disposable: Disposable) in
+//        sink.send("Hello world")
+//        sink.sendCompleted()
+//        }
+//        .map{ (s: String) in
+//            return s
+//    }
+//    
+////    sp.startWithValues { (input: String) in
+////    print(input) // "HELLO WORLD"
+////    }
 
 }
 
